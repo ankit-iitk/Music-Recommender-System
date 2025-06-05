@@ -111,3 +111,8 @@ if st.button('Recommend'):
                 st.write("🎵 No album art found")
             st.markdown(f"**{name}** by *{artist}*")
             st.markdown("---")
+st.markdown("""
+    <footer style="text-align:center; padding: 10px; background-color: #1e3d59; color: white;">
+        Made with ❤️ by  <b> Ankit Saluja </b>
+    </footer>
+""", unsafe_allow_html=True) 
