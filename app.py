@@ -9,8 +9,6 @@ from spotipy.oauth2 import SpotifyClientCredentials
 final_df = pickle.load(open('final_df.pkl', 'rb'))
 similarity_scores = pickle.load(open('similarity_scores.pkl', 'rb'))
 
-client_id = "44633c40f40c49d3abc50ef0d3570d90"
-client_secret = "4b9ad8b611f6418d9cf2c9e78d3fdcdb"
 
 sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=client_id,
                                                            client_secret=client_secret))
@@ -116,3 +114,4 @@ st.markdown("""
         Made with ❤️ by  <b> Ankit Saluja </b>
     </footer>
 """, unsafe_allow_html=True) 
+
